@@ -13,7 +13,7 @@ supplier = 'R2R'
 def prep_data(car_type='diesel'):
 
     # Data in this repository is randomly populated, original data is provided by Rome2Rio.com
-    travel_data = pd.read_pickle('../data/all_methods_random.csv')
+    travel_data = pd.read_csv('../data/all_methods_random.csv')
 
     def get_emission(row):
         if car_type == 'diesel':
