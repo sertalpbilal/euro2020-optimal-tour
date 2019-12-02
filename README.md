@@ -16,6 +16,8 @@ The original data we used is kindly provided by [Rome2Rio.com](http://rome2rio.c
 
 `games_filled.xlsx` is the schedule for the tournament.
 
+`travel_info.p` file includes coordinates of each venue and driving distance and duration between them. This data is collected through OpenStreetMap and OSRM. Note that, we have used Rome2Rio driving durations instead of these values.
+
 ## CO2e Emission
 
 We have collected emission data from UK Government GHG Conversion Factors for Company Reporting:
@@ -37,5 +39,15 @@ Following CO2e emissions (gram per kilometer per passenger) is used in the model
 Optimization model is formulated using our open-source optimization modeling package [sasoptpy](ttps://github.com/sassoftware/sasoptpy). Problems are solved on SAS Viya 3.5.
 
 Learn more about sasoptpy here: https://sassoftware.github.io/sasoptpy/index.html
+
 Learn more about SAS Viya here: https://www.sas.com/en_us/software/viya.html
+
+## Packages
+
+For Python codes, we have used following packages:
+- geopy
+- routingpy
+- pandas
+- swat
+- sasoptpy
 
