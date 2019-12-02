@@ -1,10 +1,9 @@
 import pandas as pd
-import re
 import datetime
 
 import sasoptpy as so
 from swat import CAS
-from collections import OrderedDict, namedtuple
+from collections import namedtuple
 
 import os
 
@@ -13,7 +12,9 @@ supplier = 'R2R'
 
 def prep_data(car_type='diesel'):
 
-    travel_data = pd.read_pickle('../data/all_methods.csv')
+    # Data in this repository is randomly populated, original data is provided by Rome2Rio.com
+    travel_data = pd.read_pickle('../data/all_methods_random.csv')
+
     def get_emission(row):
         if car_type == 'diesel':
             row['emission'] = 180.78 * row['flight'] +\
