@@ -2,7 +2,14 @@
 
 This repository includes source codes of our blog post about an optimal trip all over the Europe.
 
-[Link goes here] :)
+- [Summary Blog](https://blogs.sas.com/content/hiddeninsights/2019/12/03/1-tournament-12-countries-a-logistical-maze)
+- [Full Gallery](https://blogs.sas.com/content/hiddeninsights/2019/12/03/fastest-cheapest-greenest-how-will-football-fans-choose-which-matches-to-attend/)
+
+Resulting maps can be previewed:
+- [Shortest Trip](https://raw.githack.com/sertalpbilal/euro2020-optimal-tour/master/notebook/map1_shortest_tour.html)
+- [Cheapest Trip](https://raw.githack.com/sertalpbilal/euro2020-optimal-tour/master/notebook/map2_cheapest_tour.html)
+- [Least Emission - Diesel](https://raw.githack.com/sertalpbilal/euro2020-optimal-tour/master/notebook/map3_least_emission_diesel.html)
+- [Least Emission - Electric](https://raw.githack.com/sertalpbilal/euro2020-optimal-tour/master/notebook/map4_least_emission_electric.html)
 
 You can find Python codes for data preparation and optimization under `scripts`, problem data under `data` and a Jupyter notebook showing how we populated animated maps under `notebook`.
 
