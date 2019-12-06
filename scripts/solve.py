@@ -148,7 +148,7 @@ def solve_problem(objective, options=None):
         (so.quick_sum(
              use_method[game_data.loc[i].city, game_data.loc[j].city, method]
              for method in travel_data.loc[(game_data.loc[i].city, game_data.loc[j].city)].index.to_list()
-         ) >= 1 * use_arc[i, j] for (i, j) in RAW_ARCS
+         ) == 1 * use_arc[i, j] for (i, j) in RAW_ARCS
          if game_data.loc[i].city != game_data.loc[j].city), name='travel_method'
     )
 
